@@ -1,0 +1,120 @@
+@import "susy";
+
+
+$susy: (
+  columns: 12,
+  gutters: 1/6,
+  container : 1440px
+);
+
+$menu_color : #005192;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+header {
+  @include container();
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  nav {
+    @include span(9);
+    ul.primary-navigation {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      li {
+        float: left;
+        margin-left: 40px;
+        position: relative;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover > ul {
+          left: 0;
+          right: auto;
+        }
+        a {
+          font-size: 20px;
+          color: white;
+          text-decoration: none;
+          line-height: 37px;
+        } 
+      } 
+    } 
+    ul ul {
+      border-bottom: 1px solid #d1d1d1;
+      display: block;
+      left: -999em;
+      margin: 0;
+      position: absolute;
+      z-index: 99999;
+      li {
+        float: none;
+        display: block; 
+        a {
+        white-space: nowrap;  
+        }
+      }
+    }
+  }
+  .logo {
+    @include span(3 last);
+    background: url(../images/akzonobel-logo-white.svg) no-repeat;
+    width: 235px;
+    height: 45px; 
+  }
+}
+
+.wrap {
+  @include container();
+}
+
+.wrap-hero-slider {
+  @include container(100%); 
+}
+.hero-slider {
+  background: rgba(255,255,255,0.5);
+  min-height: 400px;
+  text-align: center;
+  margin: 0 -20px 0 -20px;
+}
+
+ul.blocks {
+  list-style-type: none;
+  padding: 0; margin: 0;
+  li {
+    @include gallery(3);
+    background-size: cover;
+    a {
+      min-height: 200px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      .inner {
+        margin: 10px;
+        padding: 10px;
+        background-image: linear-gradient(45deg,rgba(0,139,197,.9) 0,rgba(85,190,207,.9) 30%,rgba(150,191,13,.9) 61%,rgba(241,142,0,.9) 100%);
+      }
+      h3 {
+        margin: 0;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+
+footer {
+  min-height: 200px;
+} 
