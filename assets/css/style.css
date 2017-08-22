@@ -1,13 +1,32 @@
+img {
+  max-width: 100%; }
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
-  background-size: cover; }
+  background: #EFEFF3; }
+  body.home {
+    background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
+    background-size: cover; }
+
+body.home header nav ul.primary-navigation li a {
+  color: white; }
+
+body.home header nav ul.primary-navigation li ul li a {
+  color: black; }
+  body.home header nav ul.primary-navigation li ul li a:hover {
+    color: #005192; }
+
+body.home header .logo .logo__inner {
+  background-image: url(../images/akzonobel-logo-white.svg); }
+
+body.home header {
+  border-bottom: 1px solid white; }
 
 header {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #005192;
   margin-bottom: 20px;
   margin-top: 30px; }
   header:after {
@@ -24,7 +43,7 @@ header {
       list-style-type: none; }
       header nav ul.primary-navigation li {
         float: left;
-        margin-left: 40px;
+        margin-left: 35px;
         position: relative; }
         header nav ul.primary-navigation li:first-child {
           margin-left: 0; }
@@ -33,28 +52,48 @@ header {
           right: auto; }
         header nav ul.primary-navigation li a {
           font-size: 20px;
-          color: white;
+          color: #005192;
           text-decoration: none;
           line-height: 37px; }
-    header nav ul ul {
+    header nav ul.primary-navigation ul {
       border-bottom: 1px solid #d1d1d1;
       display: block;
       left: -999em;
       margin: 0;
+      padding: 0;
+      padding-top: 10px;
       position: absolute;
       z-index: 99999; }
-      header nav ul ul li {
+      header nav ul.primary-navigation ul:before {
+        content: "\25B2";
+        color: white;
+        position: absolute;
+        top: -4px;
+        left: 5px; }
+      header nav ul.primary-navigation ul li {
         float: none;
-        display: block; }
-        header nav ul ul li a {
-          white-space: nowrap; }
+        clear: both;
+        display: block;
+        margin: 0 !important;
+        background: white; }
+        header nav ul.primary-navigation ul li a {
+          white-space: nowrap;
+          font-size: 16px;
+          display: block;
+          padding: 0 10px;
+          border-bottom: 1px solid #f0f0f0; }
+        header nav ul.primary-navigation ul li:last-child a {
+          border-bottom: none; }
   header .logo {
     width: 24.0963855422%;
     float: right;
-    margin-right: 0;
-    background: url(../images/akzonobel-logo-white.svg) no-repeat;
-    width: 235px;
-    height: 45px; }
+    margin-right: 0; }
+    header .logo .logo__inner {
+      background-image: url(../images/akzonobel-logo.svg);
+      background-repeat: no-repeat;
+      float: right;
+      width: 278px;
+      height: 52px; }
 
 .wrap {
   max-width: 1440px;
@@ -64,6 +103,9 @@ header {
     content: " ";
     display: block;
     clear: both; }
+
+.wrap__inner {
+  padding: 0 60px; }
 
 .wrap-hero-slider {
   max-width: 100%;
@@ -77,8 +119,7 @@ header {
 .hero-slider {
   background: rgba(255, 255, 255, 0.5);
   min-height: 400px;
-  text-align: center;
-  margin: 0 -20px 0 -20px; }
+  text-align: center; }
 
 ul.blocks {
   list-style-type: none;
@@ -123,6 +164,30 @@ ul.blocks {
       ul.blocks li .overlay h3 {
         margin: 0;
         font-weight: 200; }
+
+#primary {
+  width: 66.265060241%;
+  float: left;
+  margin-right: 1.2048192771%; }
+
+main h1 {
+  color: #005192;
+  font-size: 48px;
+  font-weight: 700; }
+
+main h2 {
+  color: #005192;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400; }
+
+main p.lead {
+  font-size: 24px;
+  line-height: 32px; }
+
+main p {
+  font-size: 20px;
+  line-height: 28px; }
 
 footer {
   min-height: 200px; }

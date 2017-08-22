@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "25900",
 "files": {
+	"\/assets\/css\/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/normalize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -19,11 +29,31 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/images\/akzonobel-logo-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/akzonobel-logo-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/images\/akzonobel-logo-white.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/images\/akzonobel-logo-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/akzonobel-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/akzonobel-logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -878,6 +908,12 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
+	"\/front-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/front-page.php",
+		"oF": 0
+		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -890,6 +926,24 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/actions.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/actions.php",
+		"oF": 0
+		},
+	"\/inc\/images.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/images.php",
+		"oF": 0
+		},
+	"\/inc\/menus.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/menus.php",
+		"oF": 0
+		},
 	"\/inc\/wp_enqueue_scripts.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -900,6 +954,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page.php",
 		"oF": 0
 		},
 	"\/style.css": {

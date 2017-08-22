@@ -9,15 +9,40 @@ $susy: (
 
 $menu_color : #005192;
 
+img {
+  max-width: 100%; 
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
-  background-size: cover;
+  background: #EFEFF3;
+  &.home {
+    background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+body.home header nav ul.primary-navigation li a {
+  color: white;  
+}
+body.home header nav ul.primary-navigation li ul li a {
+  color: black;
+  &:hover {
+    color: $menu_color; 
+  } 
+}
+
+body.home header .logo .logo__inner {
+  background-image: url(../images/akzonobel-logo-white.svg);
+}
+
+body.home header {
+  border-bottom: 1px solid white;
 }
 
 header {
   @include container();
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $menu_color;
   margin-bottom: 20px;
   margin-top: 30px;
   nav {
@@ -28,7 +53,7 @@ header {
       list-style-type: none;
       li {
         float: left;
-        margin-left: 40px;
+        margin-left: 35px;
         position: relative;
         &:first-child {
           margin-left: 0;
@@ -39,38 +64,65 @@ header {
         }
         a {
           font-size: 20px;
-          color: white;
+          color: $menu_color;
           text-decoration: none;
           line-height: 37px;
         } 
       } 
     } 
-    ul ul {
+    ul.primary-navigation ul {
       border-bottom: 1px solid #d1d1d1;
       display: block;
       left: -999em;
       margin: 0;
+      padding: 0;
+      padding-top: 10px;
       position: absolute;
       z-index: 99999;
+      &:before {
+        content: "\25B2";
+        color: white;
+        position: absolute;
+        top: -4px;
+        left: 5px;
+      }
       li {
         float: none;
-        display: block; 
+        clear: both;
+        display: block;
+        margin: 0 !important;
+        background: white;
         a {
-        white-space: nowrap;  
+          white-space: nowrap;
+          font-size: 16px;
+          display: block;
+          padding: 0 10px;
+          border-bottom: 1px solid #f0f0f0;
+        }
+        &:last-child a {
+          border-bottom: none; 
         }
       }
     }
   }
   .logo {
     @include span(3 last);
-    background: url(../images/akzonobel-logo-white.svg) no-repeat;
-    width: 235px;
-    height: 45px; 
+    .logo__inner {
+      background-image: url(../images/akzonobel-logo.svg);
+      background-repeat: no-repeat;
+      float: right;
+      width: 278px;
+      height: 52px; 
+    }
   }
 }
 
 .wrap {
   @include container();
+}
+
+.wrap__inner {
+  padding: 0 60px; 
 }
 
 .wrap-hero-slider {
@@ -80,7 +132,6 @@ header {
   background: rgba(255,255,255,0.5);
   min-height: 400px;
   text-align: center;
-  margin: 0 -20px 0 -20px;
 }
 
 ul.blocks {
@@ -111,6 +162,32 @@ ul.blocks {
         font-weight: 200;
       }
     }
+  }
+}
+
+#primary {
+  @include span(8);
+}
+
+main {
+  h1 {
+    color: $menu_color;
+    font-size: 48px;
+    font-weight: 700; 
+  }
+  h2 {
+    color: $menu_color;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+  p.lead {
+    font-size: 24px;
+    line-height: 32px; 
+  }
+  p {
+    font-size: 20px;
+    line-height: 28px; 
   }
 }
 

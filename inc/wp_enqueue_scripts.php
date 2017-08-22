@@ -8,7 +8,8 @@ function theme_scripts() {
 
 	// Theme stylesheet.
 	//wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'theme-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans', null, '1.0' );
+  wp_enqueue_style( 'theme-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700', null, '1.0' );
+  wp_enqueue_style( 'normalize', get_theme_file_uri( '/assets/css/normalize.css' ), null, '7.0.0' );
   wp_enqueue_style( 'theme-style', get_theme_file_uri( '/assets/css/style.css' ), null, '1.0' );
 
   
