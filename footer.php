@@ -17,7 +17,22 @@
 
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-
+      <div class="inner">
+        <div class="inner__inner">
+        <h2>
+<b>We create everyday essentials</b> to make people's lives more liveable and inspiring.
+Essential ingredients. Essential protection. Essential color.
+        </h2>
+        <ul>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="">Lorem ipsum</a></li>
+          <li><a href="">Dolor sit amet</a></li>
+        </ul>
+        <div class="legal">
+          © <?php date('Y'); ?> Akzo Nobel N.V.
+        </div>
+        </div>
+      </div>
 		</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>

@@ -19,6 +19,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/css\/slick.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/slick-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -69,6 +79,36 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/images\/earth_banner_tcm193-86971.jpg": {
+		"ft": 16384,
+		"iS": 377021,
+		"oA": 0,
+		"oAP": "\/assets\/images\/earth_banner_tcm193-86971.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slide-1.jpg": {
+		"ft": 16384,
+		"iS": 41344,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slide-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slide-2.jpg": {
+		"ft": 16384,
+		"iS": 177704,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slide-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/images\/sustainability_banner.jpg": {
 		"ft": 16384,
 		"iS": 88108,
@@ -78,6 +118,36 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/assets\/js\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/min\/app-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/slick.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/assets\/scss\/style.scss": {
 		"aP": 0,

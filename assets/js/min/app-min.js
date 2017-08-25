@@ -1,0 +1,1 @@
+jQuery(function($){$(".hero-slider").slick({arrows:!1,autoplay:!0,fade:!0})});

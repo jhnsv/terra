@@ -17,13 +17,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #EFEFF3;
   &.home {
-    background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
+    //background: #EFEFF3 url(../images/bannershome6_0.jpg) no-repeat top center;
     background-size: cover;
   }
 }
 
 body.home header nav ul.primary-navigation li a {
-  color: white;  
+ // color: white;  
 }
 body.home header nav ul.primary-navigation li ul li a {
   color: black;
@@ -33,18 +33,22 @@ body.home header nav ul.primary-navigation li ul li a {
 }
 
 body.home header .logo .logo__inner {
-  background-image: url(../images/akzonobel-logo-white.svg);
+  //background-image: url(../images/akzonobel-logo-white.svg);
 }
 
 body.home header {
-  border-bottom: 1px solid white;
+  //border-bottom: 1px solid white;
+}
+
+.project-title {
+  margin-bottom: 20px; 
 }
 
 header {
   @include container();
   border-bottom: 1px solid $menu_color;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
   nav {
     @include span(9);
     ul.primary-navigation {
@@ -126,41 +130,85 @@ header {
 }
 
 .wrap-hero-slider {
-  @include container(100%); 
+  @include container(100%);
+  position: relative;
+  .cover {
+    position: absolute;
+    top: 0;
+background: -moz-linear-gradient(left,  rgba(239,239,243,1) 0%, rgba(239,239,243,0) 50%);
+background: -webkit-linear-gradient(left,  rgba(239,239,243,1) 0%,rgba(239,239,243,0) 50%);
+background: linear-gradient(to right,  rgba(239,239,243,1) 0%,rgba(239,239,243,0) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efeff3', endColorstr='#00efeff3',GradientType=1 );
+
+
+    height: 100%;
+    width: 10%;
+    z-index: 1000;
+  }
 }
 .hero-slider {
   background: rgba(255,255,255,0.5);
-  min-height: 400px;
   text-align: center;
+  position: relative;
+  .slide {
+    min-height: 400px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  .content {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    h2, h3 {
+      color: white;
+       
+    }
+  }
 }
 
 ul.blocks {
   list-style-type: none;
   padding: 0; margin: 0;
+  @include container(80%);
+  margin-top: 50px;
   li {
-    @include gallery(3);
-    background-size: cover;
+    background-image: linear-gradient(45deg,#005192 0,#55becf 100%);
+    &.block .inner {
+      padding: 50px 30px 20px 30px;
+      min-height: 240px;
+      position: relative; 
+    }
+    &.block-1 {
+      @include span(5);
+      .inner {
+        .read-more {
+          position: absolute;
+          right: 20px;
+          bottom: 20px; 
+        }
+      }
+    }
+    &.block-2 {
+      @include span(7 last);
+      .inner {
+        .content {
+          position: absolute;
+          bottom: 20px; 
+        }
+      }
+    }
     a {
-      min-height: 200px;
       display: block;
       color: white;
       text-decoration: none;
       position: relative;
     }
-    .overlay {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      .inner {
-        margin: 10px;
-        padding: 10px;
-        background-image: linear-gradient(45deg,rgba(0,139,197,.9) 0,rgba(85,190,207,.9) 30%,rgba(150,191,13,.9) 61%,rgba(241,142,0,.9) 100%);
-      }
-      h3 {
-        margin: 0;
-        font-weight: 200;
-      }
+    h3 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 34px;
+      font-weight: 700;
     }
   }
 }
@@ -194,4 +242,48 @@ main {
 
 footer {
   min-height: 200px;
+  margin-top: 50px;
+  background-image: linear-gradient(45deg,#005192 0,#55becf 100%);
+  .inner {
+    @include container;
+    .inner__inner {
+      padding: 30px 20px 50px 20px;
+      h2 {
+        max-width: 400px;
+        color: white;
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: 200;
+        b {
+          font-weight: 700; 
+        } 
+      }
+      .legal {
+        color: white;
+        padding-top: 50px; 
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        border-top: 1px solid white;
+        padding-top: 20px;
+        li {
+          display: inline;
+          margin: 0 10px;
+          &:first-child {
+            margin-left: 0; 
+          }
+          a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            font-size: 18px;
+          } 
+        } 
+      }
+    }
+  }
 } 
+
+
+
