@@ -9,6 +9,15 @@ $susy: (
 
 $menu_color : #005192;
 
+main {
+a {
+  color: $menu_color;
+  text-decoration: none;
+  border-bottom: thin black solid;
+  padding-bottom: -2px;
+}
+}
+
 img {
   max-width: 100%; 
 }
@@ -40,6 +49,46 @@ body.home header {
   //border-bottom: 1px solid white;
 }
 
+body {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; 
+}
+
+body.mobile-menu-active {
+  position: relative;
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+}
+
+.mobile-menu {
+  position: absolute;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-image: linear-gradient(45deg,#005192 35%,#008BC5 100%);
+  ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    li {
+      a {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 11px 10px;
+        display: block; 
+      } 
+      ul {
+        padding-top: 0;
+        padding-bottom: 0; 
+      }
+    }
+  }
+}
+
+
 .project-title {
   margin-bottom: 20px; 
 }
@@ -48,10 +97,35 @@ header {
   @include container();
   border-bottom: 1px solid $menu_color;
   margin-bottom: 20px;
-  margin-top: 10px;
+  padding-top: 10px;
   nav {
+    .le-big-mac {
+      display: block;
+      background: none;
+      border: 0;
+      .menu-icon {
+        position: relative;
+      }
+      .menu-title {
+        padding-left: 20px;
+      }
+      span.menu-bar {
+        display: block;
+        position: absolute;
+        background: $menu_color;
+        width: 15px;
+        height: 3px;
+        &.bar-2 {
+          top: 5px;
+        }
+        &.bar-3 {
+          top: 10px;
+        }
+      }
+    }
     @include span(9);
     ul.primary-navigation {
+      display: none;
       padding: 0;
       margin: 0;
       list-style-type: none;
@@ -112,11 +186,10 @@ header {
   .logo {
     @include span(3 last);
     .logo__inner {
-      background-image: url(../images/akzonobel-logo.svg);
-      background-repeat: no-repeat;
       float: right;
-      width: 278px;
-      height: 52px; 
+      img {
+        display:block; 
+      }
     }
   }
 }
@@ -126,7 +199,7 @@ header {
 }
 
 .wrap__inner {
-  padding: 0 60px; 
+  padding: 0 20px; 
 }
 
 .wrap-hero-slider {
@@ -183,6 +256,7 @@ ul.blocks {
       @include span(5);
       .inner {
         .read-more {
+          display: block;
           position: absolute;
           right: 20px;
           bottom: 20px; 
@@ -214,14 +288,17 @@ ul.blocks {
 }
 
 #primary {
-  @include span(8);
+  @include span(12);
 }
 
 main {
   h1 {
     color: $menu_color;
     font-size: 48px;
-    font-weight: 700; 
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg,#005192 0,#008bc5 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   h2 {
     color: $menu_color;
@@ -285,5 +362,31 @@ footer {
   }
 } 
 
+@include susy-breakpoint(640px) {
+  .wrap__inner {
+    padding: 0 60px; 
+  }
+  #primary {
+    @include span(9);
+    @include pad(1.5);
+  }
+  main {
+    img {
+      max-width: 120%;
+      margin-left: -10%; 
+    }    
+  }
+}
 
-
+@include susy-breakpoint(1160px) {
+  header {
+    nav {
+      .le-big-mac {
+        display: none;
+      }
+      ul.primary-navigation {
+        display: block;        
+      }
+    }
+  } 
+}

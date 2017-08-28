@@ -1002,6 +1002,12 @@
 		"oAP": "\/inc\/actions.php",
 		"oF": 0
 		},
+	"\/inc\/custom-post-types.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/custom-post-types.php",
+		"oF": 0
+		},
 	"\/inc\/images.php": {
 		"ft": 8192,
 		"oA": 2,

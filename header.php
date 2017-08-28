@@ -10,7 +10,16 @@
 
 <body <?php body_class(); ?>>
 
-
+<div class="mobile-menu">
+  <nav>
+    <?php wp_nav_menu( array(
+    		'theme_location' => 'mobile',
+    		'menu_id'        => 'mobile-menu',
+    		'menu_class'     => 'mobile-navigation',
+    		'container'      => false
+    	) ); ?>
+  </nav>
+</div>
 
 <div class="wrap">
 <div class="wrap__inner">
@@ -20,7 +29,17 @@
   AkzoNobel Terra
 </div>
 	
+
   <nav>
+  
+  <button class="le-big-mac">
+    <span class="menu-icon">
+      <span class="menu-bar bar-1"></span>
+      <span class="menu-bar bar-2"></span>
+      <span class="menu-bar bar-3"></span>
+    </span>
+    <span class="menu-title">Meny</span>
+	</button>
   
   <?php wp_nav_menu( array(
   		'theme_location' => 'primary',
@@ -31,9 +50,11 @@
 
   </nav>
 
-  <a href="#">  
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">  
   <div class="logo">
-  <div class="logo__inner"></div>
+  <div class="logo__inner">
+    <img src="<?php bloginfo('template_url'); ?>/assets/images/akzonobel-logo.svg">
+  </div>
   </div>
   </a>
   

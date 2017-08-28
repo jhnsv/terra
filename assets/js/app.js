@@ -5,5 +5,9 @@ jQuery(function($) {
     autoplay: true,
     fade: true,
   });
+  
+  $( "button.le-big-mac" ).click(function() {
+    $('body').toggleClass('mobile-menu-active');
+  });
 
 });

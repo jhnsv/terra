@@ -19,28 +19,35 @@
     <div class="wrap__inner">
     <div class="blocks-container">
       <ul class="blocks">
-        <li class="block-1 block">
+      
+<?php $q = new WP_Query( array('post_type' => 'block') ); ?>
+
+<?php if ( $q->have_posts() ) : ?>
+
+	<?php while ( $q->have_posts() ) : ?>
+		<?php $q->the_post(); ?>
+
+        <li class="block-<?php echo $q->current_post + 1 ?> block">
         <a href="#">
 
-          <div class="inner">
-            <h3>Our commitment to 1</h3>
-            <div class="read-more">Läs mer</div>
-          </div>
-
-        </a>
-        </li>
-
-        <li class="block-2 block">
-        <a href="#">
           <div class="inner">
             <div class="content">
-            <h3>Our commitment to 2</h3>
-            <div class="read-more">Läs mer </div>
+            <h3><?php the_title(); ?></h3>
+            <?php $url = get_field('url') ;?>
+            <a href="<?php echo $url['url']; ?>" class="read-more">Läs mer</a>
             </div>
           </div>
 
         </a>
         </li>
+
+	<?php endwhile; ?>
+
+	<?php wp_reset_postdata(); ?>
+
+<?php endif; ?>
+      
+
         
 
         
