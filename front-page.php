@@ -30,12 +30,12 @@
     <div class="blocks-container">
       <ul class="blocks">
       
-<?php $q = new WP_Query( array('post_type' => 'block') ); ?>
-
-<?php if ( $q->have_posts() ) : ?>
-
-	<?php while ( $q->have_posts() ) : ?>
-		<?php $q->the_post(); ?>
+      <?php $q = new WP_Query( array('post_type' => 'block') ); ?>
+      
+      <?php if ( $q->have_posts() ) : ?>
+      
+      	<?php while ( $q->have_posts() ) : ?>
+      		<?php $q->the_post(); ?>
 
         <li class="block-<?php echo $q->current_post + 1 ?> block">
         <a href="<?php echo $url['url']; ?>">
@@ -51,19 +51,13 @@
 
         </a>
         </li>
-        
 
-
-	<?php endwhile; ?>
-
-	<?php wp_reset_postdata(); ?>
-
-<?php endif; ?>
+      	<?php endwhile; ?>
       
+      	<?php wp_reset_postdata(); ?>
+      
+      <?php endif; ?>
 
-        
-
-        
       </ul>
     </div>
 

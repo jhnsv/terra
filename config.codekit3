@@ -1040,6 +1040,12 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/page-overview.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-overview.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,

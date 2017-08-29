@@ -273,6 +273,54 @@ main p {
   font-size: 16px;
   line-height: 24px; }
 
+main input[type=text], main input[type=email], main textarea {
+  border: 0;
+  padding: 0;
+  width: 78%;
+  padding: 1%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+main input[type=submit] {
+  background: #005192;
+  border: none;
+  color: white;
+  padding: 10px 15px; }
+
+.child-pages {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px; }
+  .child-pages a {
+    color: white;
+    text-decoration: none;
+    min-height: 240px;
+    display: block; }
+  .child-pages li {
+    width: 32.5301204819%;
+    float: left;
+    margin-bottom: 1.3157894737%;
+    background-image: linear-gradient(45deg, #005192 0, #55becf 100%); }
+    .child-pages li:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .child-pages li:nth-child(3n + 2) {
+      margin-left: 33.734939759%;
+      margin-right: -100%;
+      clear: none; }
+    .child-pages li:nth-child(3n + 3) {
+      margin-left: 67.4698795181%;
+      margin-right: -100%;
+      clear: none; }
+    .child-pages li.has-image {
+      background-color: #c0c0c0;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .child-pages li .inner {
+      padding: 20px; }
+
 footer {
   min-height: 200px;
   margin-top: 50px;
