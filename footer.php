@@ -23,11 +23,12 @@
 <b>We create everyday essentials</b> to make people's lives more liveable and inspiring.
 Essential ingredients. Essential protection. Essential color.
         </h2>
-        <ul>
-          <li><a href="">Kontakt</a></li>
-          <li><a href="">Lorem ipsum</a></li>
-          <li><a href="">Dolor sit amet</a></li>
-        </ul>
+        <?php wp_nav_menu( array(
+        		'theme_location' => 'footer',
+        		'menu_id'        => 'footer-menu',
+        		'menu_class'     => 'footer-navigation',
+        		'container'      => false
+        	) ); ?>
         <div class="legal">
           © <?php date('Y'); ?> Akzo Nobel N.V.
         </div>

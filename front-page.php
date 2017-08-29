@@ -3,11 +3,21 @@
     <div class="wrap-hero-slider">
         <div class="hero-slider">
           <div class="slide-1 slide" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/images/slide-1.jpg);" >
-
+            <div class="hero-slider__content">
+              <div class="inner">
+              <h2>Projekt Terra</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, risus vel rhoncus interdum, risus ex placerat enim, quis lacinia neque turpis in est.</p>
+              </div>
+            </div>
           </div>
           
           <div class="slide-2 slide" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/images/slide-2.jpg);" >
-
+            <div class="hero-slider__content">
+              <div class="inner">
+              <h2>Projekt Terra</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, risus vel rhoncus interdum, risus ex placerat enim, quis lacinia neque turpis in est.</p>
+              </div>
+            </div>
           </div>
           
         </div>
@@ -28,18 +38,21 @@
 		<?php $q->the_post(); ?>
 
         <li class="block-<?php echo $q->current_post + 1 ?> block">
-        <a href="#">
+        <a href="<?php echo $url['url']; ?>">
 
           <div class="inner">
             <div class="content">
             <h3><?php the_title(); ?></h3>
+            <?php the_content(); ?>
             <?php $url = get_field('url') ;?>
-            <a href="<?php echo $url['url']; ?>" class="read-more">Läs mer</a>
+            <div class="read-more">Läs mer</div>
             </div>
           </div>
 
         </a>
         </li>
+        
+
 
 	<?php endwhile; ?>
 

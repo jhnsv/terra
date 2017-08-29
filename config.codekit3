@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "25900",
 "files": {
+	"\/acf-json\/group_59a417192255b.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_59a417192255b-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/assets\/css\/normalize.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1061,7 +1069,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2447,7 +2455,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/terraprojektet.dev\/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

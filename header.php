@@ -38,7 +38,7 @@
       <span class="menu-bar bar-2"></span>
       <span class="menu-bar bar-3"></span>
     </span>
-    <span class="menu-title">Meny</span>
+    <!--<span class="menu-title">Meny</span>-->
 	</button>
   
   <?php wp_nav_menu( array(
