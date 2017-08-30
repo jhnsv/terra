@@ -58,7 +58,7 @@ get_header(); ?>
         <li>        
         
         <?php endif; ?>
-        <a href="<?php echo $url['url']; ?>">
+        <a href="<?php the_permalink(); ?>">
 
           <div class="inner">
             <div class="content">

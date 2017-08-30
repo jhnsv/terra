@@ -105,7 +105,7 @@ header {
       background: none;
       border: 0;
       padding: 0;
-      margin-top: 15px;
+      margin-top: 10px;
       .menu-icon {
         position: relative;
       }
@@ -116,13 +116,13 @@ header {
         display: block;
         position: absolute;
         background: $menu_color;
-        width: 15px;
-        height: 3px;
+        width: 25px;
+        height: 4px;
         &.bar-2 {
-          top: 5px;
+          top: 7px;
         }
         &.bar-3 {
-          top: 10px;
+          top: 14px;
         }
       }
     }
@@ -341,7 +341,6 @@ main {
     display: block;
   }
   li {
-    @include gallery(4);
     margin-bottom: gutter(11);
     background-image: linear-gradient(45deg,#005192 0,#55becf 100%);
     &.has-image {
@@ -404,6 +403,10 @@ footer {
 
 @include susy-breakpoint(640px) {
   
+  .child-pages li {
+    @include gallery(6); 
+  }
+  
   &.block-1 {
     @include span(6);
   }
@@ -458,6 +461,11 @@ footer {
 }
 
 @include susy-breakpoint(1024px) {
+  
+  .child-pages li {
+    @include gallery(4); 
+  }
+  
   &.block-1, &.block-6 {
     @include span(3);
   }

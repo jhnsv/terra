@@ -1,28 +1,29 @@
 <?php get_header(); ?>
 
+    <?php $q = new WP_Query( array('post_type' => 'slide', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); ?>
+      
+    <?php if ( $q->have_posts() ) : ?>
+
     <div class="wrap-hero-slider">
         <div class="hero-slider">
-          <div class="slide-1 slide" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/images/slide-1.jpg);" >
+        
+      	<?php while ( $q->have_posts() ) : ?>
+      		<?php $q->the_post(); ?>
+          <div class="slide" style="background-image: url(<?php echo get_thumbnail_url($post->ID); ?>)">
             <div class="hero-slider__content">
               <div class="inner">
-              <h2>Projekt Terra</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, risus vel rhoncus interdum, risus ex placerat enim, quis lacinia neque turpis in est.</p>
+              <h2><?php the_title(); ?></h2>
+              <?php the_content(); ?>
               </div>
             </div>
           </div>
+
+      	<?php endwhile; ?>
+      	<?php wp_reset_postdata(); ?>
           
-          <div class="slide-2 slide" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/images/slide-2.jpg);" >
-            <div class="hero-slider__content">
-              <div class="inner">
-              <h2>Projekt Terra</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor, risus vel rhoncus interdum, risus ex placerat enim, quis lacinia neque turpis in est.</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="cover"></div>
-    </div>
+        </div><!-- /hero-slider -->
+    </div><!-- /wrap-hero-slider -->
+    <?php endif; ?>
 
 
     <div class="wrap">
@@ -30,7 +31,7 @@
     <div class="blocks-container">
       <ul class="blocks">
       
-      <?php $q = new WP_Query( array('post_type' => 'block') ); ?>
+      <?php $q = new WP_Query( array('post_type' => 'block', 'post_per_page' => 6 ) ); ?>
       
       <?php if ( $q->have_posts() ) : ?>
       
@@ -38,13 +39,13 @@
       		<?php $q->the_post(); ?>
 
         <li class="block-<?php echo $q->current_post + 1 ?> block">
+        <?php $url = get_field('url') ;?>
         <a href="<?php echo $url['url']; ?>">
 
           <div class="inner">
             <div class="content">
             <h3><?php the_title(); ?></h3>
             <?php the_content(); ?>
-            <?php $url = get_field('url') ;?>
             <div class="read-more">Läs mer</div>
             </div>
           </div>
