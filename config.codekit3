@@ -103,6 +103,12 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/images\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/images\/favicon.ico",
+		"oF": 0
+		},
 	"\/assets\/images\/slide-1.jpg": {
 		"ft": 16384,
 		"iS": 41344,
