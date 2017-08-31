@@ -1052,6 +1052,12 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/page-blog.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-blog.php",
+		"oF": 0
+		},
 	"\/page-overview.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1062,6 +1068,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single.php",
 		"oF": 0
 		},
 	"\/style.css": {

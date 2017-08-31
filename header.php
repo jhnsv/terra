@@ -54,13 +54,13 @@
 
   </nav>
 
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">  
+
   <div class="logo">
   <div class="logo__inner">
     <img src="<?php bloginfo('template_url'); ?>/assets/images/akzonobel-logo.svg">
   </div>
   </div>
-  </a>
+
   
 
 	</header><!-- #masthead -->

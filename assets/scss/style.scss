@@ -10,12 +10,14 @@ $susy: (
 $menu_color : #005192;
 
 main {
-a {
-  color: $menu_color;
-  text-decoration: none;
-  border-bottom: thin black solid;
-  padding-bottom: -2px;
-}
+  a {
+    color: $menu_color;
+    text-decoration: none;
+    border-bottom: thin black solid;
+    &:hover {
+      border-bottom: none;
+    }
+  }
 }
 
 img {
@@ -352,6 +354,25 @@ main {
     border: none;
     color: white;
     padding: 10px 15px; 
+  }
+}
+
+/* blog */
+main {
+  .posts {
+    border-top: 1px solid $menu_color;
+    padding-top: 25px;
+    margin-top: 25px;
+    article {
+      margin-top: 25px;
+    }
+    h2 {
+      margin-top: 0; 
+    }
+    p.lead {
+      font-size: 18px;
+      line-height: 26px; 
+    }
   }
 }
 

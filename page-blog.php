@@ -29,7 +29,9 @@ get_header(); ?>
     <div class="posts">
       <?php while ( $q->have_posts() ) : $q->the_post(); ?>
         <article>
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <date><?php the_time('Y-m-d'); ?></date>
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <?php the_excerpt(); ?>
         </article>
       <?php endwhile; ?>
 
