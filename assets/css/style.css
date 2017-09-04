@@ -54,6 +54,11 @@ body.mobile-menu-active {
 
 .project-title {
   margin-bottom: 20px; }
+  .project-title a {
+    color: black;
+    text-decoration: none; }
+  .project-title span {
+    color: #000; }
 
 header {
   max-width: 1440px;

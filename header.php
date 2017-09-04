@@ -30,7 +30,9 @@
 	<header id="masthead" class="site-header" role="banner">
 	
 <div class="project-title">
-  AkzoNobel Terra
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+  <span>AkzoNobel</span> Terra
+  </a>
 </div>
 	
 

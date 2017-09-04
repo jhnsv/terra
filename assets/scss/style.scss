@@ -8,6 +8,7 @@ $susy: (
 );
 
 $menu_color : #005192;
+$dark_gray : #000;
 
 main {
   a {
@@ -105,7 +106,14 @@ body.mobile-menu-active {
 
 
 .project-title {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  a {
+    color: black;
+    text-decoration: none; 
+  }
+  span {
+    color: $dark_gray;
+  }
 }
 
 header {

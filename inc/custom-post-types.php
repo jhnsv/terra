@@ -7,8 +7,10 @@ function create_post_types () {
 			'singular_name' => 'Block'
 		),
 		'menu_icon' => 'dashicons-screenoptions',
-		'public' => true,
+		'public' => false,
+		'show_ui' => true,
 		'publicly_queryable' => false,
+		'show_in_nav_menus' => false,
 		'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')
 	));
 	
@@ -18,8 +20,10 @@ function create_post_types () {
 			'singular_name' => 'Slide'
 		),
 		'menu_icon' => 'dashicons-images-alt2',
-		'public' => true,
+		'public' => false,
+		'show_ui' => true,
 		'publicly_queryable' => false,
+		'show_in_nav_menus' => false,
 		'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')
 	));
 	
