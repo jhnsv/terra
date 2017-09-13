@@ -9,11 +9,14 @@
         
       	<?php while ( $q->have_posts() ) : ?>
       		<?php $q->the_post(); ?>
-          <div class="slide" style="background-image: url(<?php echo get_thumbnail_url($post->ID); ?>)">
+          <div class="slide">
+          <?php the_post_thumbnail(); ?>
             <div class="hero-slider__content">
               <div class="inner">
+              <div class="really_inner">
               <h2><?php the_title(); ?></h2>
               <?php the_content(); ?>
+              </div>
               </div>
             </div>
           </div>
