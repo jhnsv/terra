@@ -12,11 +12,9 @@
           <div class="slide">
           <?php the_post_thumbnail(); ?>
             <div class="hero-slider__content">
-              <div class="inner">
-              <div class="really_inner">
-              <h2><?php the_title(); ?></h2>
-              <?php the_content(); ?>
-              </div>
+              <div class="inner <?php the_field('color'); ?>">
+                <h2><?php the_title(); ?></h2>
+                <?php the_content(); ?>
               </div>
             </div>
           </div>
