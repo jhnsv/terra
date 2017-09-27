@@ -1085,6 +1085,12 @@
 		"oAP": "\/page-blog.php",
 		"oF": 0
 		},
+	"\/page-faq.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-faq.php",
+		"oF": 0
+		},
 	"\/page-overview.php": {
 		"ft": 8192,
 		"oA": 2,
