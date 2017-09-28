@@ -20,7 +20,7 @@ get_header(); ?>
       
       <?php the_content(); ?>
       
-    <?php $a = array( 'post_type' => 'faq', 'order' => 'ASC', 'posts_per_page' => -1 ); ?>
+    <?php $a = array( 'post_type' => 'faq', 'posts_per_page' => -1 ); ?>
     <?php $q = new WP_Query( $a ); ?>
     
     <?php if ( $q->have_posts() ) : ?>
