@@ -35,7 +35,7 @@ Essential ingredients. Essential protection. Essential color.
         </div>
       </div>
 		</footer><!-- #colophon -->
-
+</div><!-- o-wrapper -->
 <?php wp_footer(); ?>
 
 </body>

@@ -19,18 +19,19 @@ body.home header nav ul.primary-navigation li ul li a {
   body.home header nav ul.primary-navigation li ul li a:hover {
     color: #005192; }
 
-body {
+.o-wrapper {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: .3s ease all;
   transition: .3s ease all; }
 
-body.mobile-menu-active {
+body.mobile-menu-active .o-wrapper {
   position: relative;
   -webkit-transform: translateX(300px);
   transform: translateX(300px); }
-  body.mobile-menu-active header nav .le-big-mac span.menu-bar.bar-1, body.mobile-menu-active header nav .le-big-mac span.menu-bar.bar-3 {
-    top: 7px; }
+
+body.mobile-menu-active header nav .le-big-mac span.menu-bar.bar-1, body.mobile-menu-active header nav .le-big-mac span.menu-bar.bar-3 {
+  top: 7px; }
 
 .mobile-menu {
   position: absolute;

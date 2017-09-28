@@ -14,6 +14,8 @@
 
 <body <?php body_class(); ?>>
 
+<div class="o-wrapper">
+
 <div class="mobile-menu">
   <nav>
     <?php wp_nav_menu( array(
@@ -24,6 +26,8 @@
     	) ); ?>
   </nav>
 </div>
+
+
 
 <div class="wrap">
 <div class="wrap__inner">
