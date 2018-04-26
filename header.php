@@ -63,7 +63,7 @@
 
   <div class="logo">
   <div class="logo__inner">
-    <img src="<?php bloginfo('template_url'); ?>/assets/images/akzonobel-logo.svg">
+    <img src="<?php bloginfo('template_url'); ?>/assets/images/AN-SC-logo-Gradient.png">
   </div>
   </div>
 

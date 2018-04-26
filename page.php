@@ -32,6 +32,36 @@ get_header(); ?>
       <?php endif; ?>
       
       <?php the_content(); ?>
+      
+
+<?php
+
+// check if the repeater field has rows of data
+if( have_rows('section') ): ?>
+
+  <div class="sections">
+  <?php while ( have_rows('section') ) : the_row(); ?>
+  
+  <div class="section">
+  <div class="col-image">
+
+        <?php echo wp_get_attachment_image(get_sub_field('image'), 'full'); ?>
+        
+        </div>
+        
+        <div class="col-content">
+        
+        <?php the_sub_field('content'); ?>
+        </div>
+        
+  </div><!-- /section -->
+<?php endwhile; ?>
+
+      </div><!-- /sectionS -->
+
+<?php endif; ?>
+      
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

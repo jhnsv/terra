@@ -7,9 +7,10 @@
 		"uuidString": "3EA25A4C-37EA-4033-B2B6-6D39ABB6AD31"
 		}
 	],
-"creatorBuild": "25900",
+"creatorBuild": "26680",
 "files": {
 	"\/404.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/404.php",
@@ -27,6 +28,14 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "\/acf-json\/group_59b97068dbb9b-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_5ae1e97177ace.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5ae1e97177ace-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -91,9 +100,21 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/AN-SC-logo-Gradient.png": {
+		"ft": 32768,
+		"iS": 38140,
+		"oA": 0,
+		"oAP": "\/assets\/images\/AN-SC-logo-Gradient.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/bannershome6_0.jpg": {
 		"ft": 16384,
 		"iS": 400849,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/bannershome6_0.jpg",
 		"oF": 0,
@@ -104,6 +125,7 @@
 	"\/assets\/images\/earth_banner_tcm193-86971.jpg": {
 		"ft": 16384,
 		"iS": 377021,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/earth_banner_tcm193-86971.jpg",
 		"oF": 0,
@@ -112,6 +134,7 @@
 		"q": 100
 		},
 	"\/assets\/images\/favicon.ico": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/images\/favicon.ico",
@@ -120,6 +143,7 @@
 	"\/assets\/images\/slide-1.jpg": {
 		"ft": 16384,
 		"iS": 41344,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/slide-1.jpg",
 		"oF": 0,
@@ -130,6 +154,7 @@
 	"\/assets\/images\/slide-2.jpg": {
 		"ft": 16384,
 		"iS": 177704,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/slide-2.jpg",
 		"oF": 0,
@@ -140,6 +165,7 @@
 	"\/assets\/images\/sustainability_banner.jpg": {
 		"ft": 16384,
 		"iS": 88108,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/sustainability_banner.jpg",
 		"oF": 0,
@@ -203,14 +229,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/bower.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/bower-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/bower_components\/susy\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -220,30 +238,35 @@
 		"oS": 1
 		},
 	"\/bower_components\/susy\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.gitignore",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.mailmap": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.mailmap",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.npmignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.npmignore",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sass-lint.yml": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sass-lint.yml",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/a-config.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/a-config.html",
@@ -270,6 +293,7 @@
 		"oS": 3
 		},
 	"\/bower_components\/susy\/.sassdoc\/assets\/img\/favicon.ico": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/assets\/img\/favicon.ico",
@@ -326,70 +350,80 @@
 		"tS": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/b-api.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/b-api.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/index.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/index.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/plugin-utils.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/plugin-utils.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/plugin_svg-grid.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/plugin_svg-grid.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/su-math.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/su-math.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/x--validation.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/x--validation.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/x-normal.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/x-normal.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdoc\/x-parser.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdoc\/x-parser.html",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.sassdocrc": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.sassdocrc",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/.travis.yml": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/.travis.yml",
 		"oF": 0
 		},
 	"\/bower_components\/susy\/CHANGELOG.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -404,10 +438,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/susy\/CONTRIBUTING.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -422,6 +456,7 @@
 		"uCM": 0
 		},
 	"\/bower_components\/susy\/LICENSE.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/LICENSE.txt",
@@ -436,10 +471,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/susy\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -696,6 +731,7 @@
 		"uL": 1
 		},
 	"\/bower_components\/susy\/test\/ag.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/test\/ag.html",
@@ -992,6 +1028,7 @@
 		"uL": 1
 		},
 	"\/bower_components\/susy\/test\/svg.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/test\/svg.html",
@@ -1008,102 +1045,119 @@
 		"tS": 0
 		},
 	"\/bower_components\/susy\/yarn.lock": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/susy\/yarn.lock",
 		"oF": 0
 		},
 	"\/footer.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
 	"\/front-page.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/front-page.php",
 		"oF": 0
 		},
 	"\/functions.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
 	"\/header.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/header.php",
 		"oF": 0
 		},
 	"\/inc\/actions.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/actions.php",
 		"oF": 0
 		},
 	"\/inc\/custom-post-types.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/custom-post-types.php",
 		"oF": 0
 		},
 	"\/inc\/filters.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/filters.php",
 		"oF": 0
 		},
 	"\/inc\/images.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/images.php",
 		"oF": 0
 		},
 	"\/inc\/menus.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/menus.php",
 		"oF": 0
 		},
 	"\/inc\/wp_enqueue_scripts.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/wp_enqueue_scripts.php",
 		"oF": 0
 		},
 	"\/index.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
 		},
 	"\/page-blog.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-blog.php",
 		"oF": 0
 		},
 	"\/page-faq.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-faq.php",
 		"oF": 0
 		},
 	"\/page-overview.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-overview.php",
 		"oF": 0
 		},
 	"\/page.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page.php",
 		"oF": 0
 		},
 	"\/single.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single.php",
@@ -1128,7 +1182,8 @@
 	"creationDate": 524909367,
 	"displayValue": "terra",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_magenta"
+	"iconImageName": "brackets_magenta",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1136,6 +1191,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1664,6 +1720,10 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
@@ -1695,6 +1755,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -1728,9 +1792,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -1760,6 +1824,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -1769,14 +1837,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -2880,7 +2940,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -2913,6 +2974,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2924,6 +2986,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
@@ -2954,7 +3017,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -2986,13 +3050,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -3001,7 +3065,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -3021,7 +3086,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -3049,7 +3115,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,

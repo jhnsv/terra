@@ -10,6 +10,18 @@ $susy: (
 $menu_color : #005192;
 $dark_gray : #000;
 
+@mixin gradient() {
+  
+background: rgba(0,128,163,1);
+background: -moz-linear-gradient(45deg, rgba(0,128,163,1) 0%, rgba(0,128,163,1) 50%, rgba(255,130,0,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,128,163,1)), color-stop(50%, rgba(0,128,163,1)), color-stop(100%, rgba(255,130,0,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,128,163,1) 0%, rgba(0,128,163,1) 50%, rgba(255,130,0,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,128,163,1) 0%, rgba(0,128,163,1) 50%, rgba(255,130,0,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,128,163,1) 0%, rgba(0,128,163,1) 50%, rgba(255,130,0,1) 100%);
+background: linear-gradient(45deg, rgba(0,128,163,1) 0%, rgba(0,128,163,1) 50%, rgba(255,130,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0080a3', endColorstr='#ff8200', GradientType=1 );
+}
+
 main {
   a {
     color: $menu_color;
@@ -23,6 +35,7 @@ main {
 
 img {
   max-width: 100%; 
+  height: auto;
 }
 
 body {
@@ -93,7 +106,7 @@ body.mobile-menu-active {
   width: 300px;
   height: 100%;
   background: $menu_color;
-  background-image: linear-gradient(45deg,#005192 35%,#008BC5 100%);
+  @include gradient();
   ul {
     list-style-type: none;
     padding: 10px;
@@ -262,6 +275,30 @@ header {
       margin: 0 auto; 
     }
   }
+  ul.slick-dots {
+    text-align: center;
+    li {
+      display: inline;
+      margin: 0 auto;
+      button {
+        background: none;
+        border: 0;
+        color: white;
+        background: black;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        font-size: 12px;
+      }
+      &.slick-active {
+        button {
+          background: white;
+          color: black; 
+        } 
+      } 
+    }
+  }
   .hero-slider__content {
 
     bottom: 20px;
@@ -270,9 +307,19 @@ header {
       h2, h3, p {
         color: #333;
       }
+      &.white {
+        a {
+          color: #333;
+          text-decoration: none; 
+        } 
+      }
       &.black {
         h2, h3, p {
           color: #333;
+          a {
+            color: #333;
+            text-decoration: none; 
+          }
         }      
       }
     }
@@ -299,8 +346,8 @@ ul.blocks {
   margin-top: 40px;
   li {
     margin-bottom: gutter(11);
-      background: $menu_color;
-    background-image: linear-gradient(45deg,#005192 0,#55becf 100%);
+    background: $menu_color;  
+    @include gradient();
     &.block .inner {
       padding: 50px 30px 20px 30px;
       min-height: 240px;
@@ -341,7 +388,7 @@ main {
     padding: 10px 0;
     font-size: 32px;
     font-weight: 700;
-    background: -webkit-linear-gradient(45deg,#005192 0,#008bc5 100%);
+    @include gradient();
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
@@ -409,8 +456,8 @@ main {
   }
   li {
     margin-bottom: gutter(11);
-      background: $menu_color;
-    background-image: linear-gradient(45deg,#005192 0,#55becf 100%);
+    background: $menu_color;
+    @include gradient();
     &.has-image {
       background-color: #c0c0c0;
       background-repeat: no-repeat;
@@ -422,12 +469,19 @@ main {
   }
 }
 
+.section {
+  border-bottom: 1px solid $menu_color;
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
 
 footer {
   min-height: 200px;
   margin-top: 50px;
-    background: $menu_color;
-  background-image: linear-gradient(45deg,#005192 0,#55becf 100%);
+  background: $menu_color;
+  @include gradient();
   .inner {
     @include container;
     .inner__inner {
@@ -475,7 +529,10 @@ footer {
   .child-pages li {
     @include gallery(6); 
   }
-  
+  .block {
+    @include gallery(6);
+  }
+  /*
   &.block-1 {
     @include span(6);
   }
@@ -485,7 +542,7 @@ footer {
   &.block-3, &.block-5 {
     @include span(6);
   }
-  
+  */
   
   .hero-slider {
     .hero-slider__content {
@@ -497,6 +554,11 @@ footer {
         h2, h3, p {
           color: #fff; 
           text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+        }
+        &.white {
+          a {
+            color: white; 
+          }
         }
       }
       h2 {
@@ -537,10 +599,26 @@ footer {
 
 @include susy-breakpoint(1024px) {
   
+  .col-image {
+    @include span(6);    
+  }
+  
+  .col-content {
+    @include span(6 last); 
+    p {
+      margin-top: 0;
+      padding: 0 0 0 20px;
+      font-size: 16px;
+    } 
+  }
+  
   .child-pages li {
     @include gallery(4); 
   }
-  
+  .block {
+    @include gallery(3);
+  }
+  /*
   &.block-1, &.block-6 {
     @include span(3);
   }
@@ -550,6 +628,7 @@ footer {
   &.block-3, &.block-5 {
     @include span(4 last);
   }
+  */
 }
 
 @include susy-breakpoint(1160px) {

@@ -4,7 +4,8 @@ jQuery(function($) {
     arrows: false,
     autoplay: true,
     fade: true,
-    autoplaySpeed : 7000
+    autoplaySpeed : 7000,
+    dots : true
   });
   
   $( "button.le-big-mac" ).click(function() {
