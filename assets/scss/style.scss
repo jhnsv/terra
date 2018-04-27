@@ -57,6 +57,15 @@ body.home header nav ul.primary-navigation li ul li a {
   } 
 }
 
+body.page-template-page-faq .q-and-a {
+  h3 {
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 0px;
+  }
+}
+
 body.home header .logo .logo__inner {
   //background-image: url(../images/akzonobel-logo-white.svg);
 }

@@ -38,7 +38,9 @@ get_header(); ?>
 
     </p><!-- /faq -->
     
+    <div class="q-and-a">
     <?php echo $the_content; ?>
+    </div>
     
     <?php endif; ?>
       
