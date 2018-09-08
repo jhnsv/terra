@@ -16,29 +16,20 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
-	"\/acf-json\/group_59a417192255b.json": {
+	"\/acf-json\/group_5b923bceb1e00.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/acf-json\/group_59a417192255b-min.json",
+		"oAP": "\/acf-json\/group_5b923bceb1e00-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"\/acf-json\/group_59b97068dbb9b.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/acf-json\/group_59b97068dbb9b-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/acf-json\/group_5ae1e97177ace.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/acf-json\/group_5ae1e97177ace-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
+	"\/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive.php",
+		"oF": 0
 		},
 	"\/assets\/css\/normalize.css": {
 		"aP": 1,
@@ -47,16 +38,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/css\/normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/css\/slick.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/slick-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -70,108 +51,99 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/images\/akzonobel-logo-blue.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/images\/akzonobel-logo-blue.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/images\/akzonobel-logo-white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/images\/akzonobel-logo-white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/images\/akzonobel-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/images\/akzonobel-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/images\/AN-SC-logo-Gradient.png": {
-		"ft": 32768,
-		"iS": 38140,
+	"\/assets\/img\/Area65_prodpic.jpg": {
+		"ft": 16384,
+		"iS": 3321,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/images\/AN-SC-logo-Gradient.png",
+		"oAP": "\/assets\/img\/Area65_prodpic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/bg.jpg": {
+		"ft": 16384,
+		"iS": 95884,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/icon-cart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/icon-cart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/icon-menu.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/icon-menu.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/icon-oval.png": {
+		"ft": 32768,
+		"iS": 1427,
+		"oA": 0,
+		"oAP": "\/assets\/img\/icon-oval.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/images\/bannershome6_0.jpg": {
-		"ft": 16384,
-		"iS": 400849,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/images\/bannershome6_0.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/images\/earth_banner_tcm193-86971.jpg": {
-		"ft": 16384,
-		"iS": 377021,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/images\/earth_banner_tcm193-86971.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/images\/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
+	"\/assets\/img\/icon-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
 		"oA": 2,
-		"oAP": "\/assets\/images\/favicon.ico",
-		"oF": 0
+		"oAP": "\/assets\/img\/icon-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/assets\/images\/slide-1.jpg": {
-		"ft": 16384,
-		"iS": 41344,
-		"jF": 0,
+	"\/assets\/img\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/upplyst-icon.png": {
+		"ft": 32768,
+		"iS": 34519,
 		"oA": 0,
-		"oAP": "\/assets\/images\/slide-1.jpg",
+		"oAP": "\/assets\/img\/upplyst-icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/images\/slide-2.jpg": {
-		"ft": 16384,
-		"iS": 177704,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/images\/slide-2.jpg",
+	"\/assets\/img\/upplyst-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/upplyst-logo.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/images\/sustainability_banner.jpg": {
-		"ft": 16384,
-		"iS": 88108,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/images\/sustainability_banner.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/js\/app.js": {
 		"ft": 64,
@@ -192,29 +164,6 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/assets\/js\/slick.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/min\/slick.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/assets\/scss\/style 2.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/style 2.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"\/assets\/scss\/style.scss": {
 		"aP": 0,
@@ -1128,27 +1077,6 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/page-blog.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-blog.php",
-		"oF": 0
-		},
-	"\/page-faq.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-faq.php",
-		"oF": 0
-		},
-	"\/page-overview.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-overview.php",
-		"oF": 0
-		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1180,7 +1108,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 524909367,
-	"displayValue": "terra",
+	"displayValue": "upplyst",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_magenta",
 	"iconImageWasSetByUser": 0

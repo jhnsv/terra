@@ -1,44 +1,17 @@
 <?php
 function create_post_types () {
 
-  register_post_type('block', array(
+  register_post_type('product', array(
 		'labels' => array(
-			'name' => 'Blocks',
-			'singular_name' => 'Block'
+			'name' => 'Products',
+			'singular_name' => 'Product'
 		),
-		'menu_icon' => 'dashicons-screenoptions',
-		'public' => false,
+		'menu_icon' => 'dashicons-lightbulb',
+		'public' => true,
 		'show_ui' => true,
-		'publicly_queryable' => false,
-		'show_in_nav_menus' => false,
-		'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'taxonomies' => array( 'category' )
 	));
-	
-  register_post_type('slide', array(
-		'labels' => array(
-			'name' => 'Slides',
-			'singular_name' => 'Slide'
-		),
-		'menu_icon' => 'dashicons-images-alt2',
-		'public' => false,
-		'show_ui' => true,
-		'publicly_queryable' => false,
-		'show_in_nav_menus' => false,
-		'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')
-	));
-	
-  register_post_type('faq', array(
-		'labels' => array(
-			'name' => 'FAQ',
-			'singular_name' => 'FAQ'
-		),
-		'menu_icon' => 'dashicons-visibility',
-		'public' => false,
-		'show_ui' => true,
-		'publicly_queryable' => false,
-		'show_in_nav_menus' => false,
-		'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')
-	));
-	
+
 }
 add_action( 'init', 'create_post_types' );
