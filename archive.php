@@ -19,21 +19,50 @@
   <div class="wrap wrap-content">
   <div class="inner">
   <div class="filter">
-    <h3>Kategori</h3>
-    <form>
-      <label for="plask"><input class="filters" id="plask" type="checkbox" name="vehicle" value="cat-1">Cat 1</label>
+
+<!--<p id="filter-display"></p>-->
+
+    <form id="form-ui">
+    
+    <?php 
+    $terms = get_terms( array(
+    'taxonomy' => 'category',
+    'hide_empty' => false,
+    'parent' => 5
+    ) );
+    ?>
+    
+    <h3>Ljuskälla</h3>
+    <div class="option-set" data-group="color">
+      <?php foreach ( $terms as $term ) : ?>
+      <label for="<?php echo $term->slug; ?>">
+        <input class="filters" id="<?php echo $term->slug; ?>" type="checkbox" name="filter_in" value=".category-<?php echo $term->slug; ?>">
+        <?php echo $term->name; ?><br>
+          </label>
+      <?php endforeach; ?>
+      </div>
+    <?php 
+    $terms = get_terms( array(
+    'taxonomy' => 'category',
+    'hide_empty' => false,
+    'parent' => 8
+    ) );
+    ?>
+    
+    <h3>Leverantör</h3>
+    <div class="option-set" data-group="size">
+      <?php foreach ( $terms as $term ) : ?>
+      <label for="<?php echo $term->slug; ?>">
+        <input class="filters" id="<?php echo $term->slug; ?>" type="checkbox" name="filter_in" value=".category-<?php echo $term->slug; ?>">
+        <?php echo $term->name; ?><br>
+          </label>
+      <?php endforeach; ?>
+      </div>
+      
+      
     </form> 
     
-    
-    
-<div id="form-ui">
-<p>
-  <label><input type="checkbox" value=".category-kategori-1" /> 1</label>
-  <label><input type="checkbox" value=".category-kategori-2" /> 2</label>
-  <label><input type="checkbox" value=".category-kategori-3" /> 3</label>
-  <label><input type="checkbox" value=".category-uncategorized" /> un</label>
-</p>
-</div>
+
     
   </div>
   
